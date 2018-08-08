@@ -1,7 +1,304 @@
 .intro {
+    color: $header-text-color;
 
     .container {
         background: url('../images/background/intro-background.png') 0 0 no-repeat;
     }
     
+}
+
+.intro-main {
+    @extend %clearfix;
+    padding: rem(25px) 0 0 0; 
+}
+
+.intro-main__header {
+    @include font(rem(60px), 1);
+    @include roboto-condensed();
+    margin-bottom: rem(21px);
+    color: $intro-heading-color;
+    text-transform: uppercase;
+}
+
+.intro-main__advantages {
+    width: rem(340px);
+    float: left;
+}
+
+.intro-main__advantages-header {
+    @include font(rem(22px), 1.3);
+    @include roboto();
+    margin-bottom: rem(10px);
+}
+
+.intro-main__advantages-list {
+    margin-bottom: rem(15px);
+}
+
+.intro-main__advantages-item {
+    padding: rem(8px) 0 rem(5px) 0;
+    
+    &:not(:last-of-type){
+        background: url('../images/decor/border-bottom.png') 0 100% no-repeat;
+    }
+
+}
+
+.intro-main__advantages-marker {
+    @include inline-block(middle);
+    width: 24px;
+    height: 24px;
+    background: url('../images/icons/icons-sprites.png') -174px -30px;
+}
+
+.intro-main__advantages-text {
+    @include inline-block(middle);
+    @include font(rem(16px), 1.41);
+    margin-left: rem(7px);
+}
+
+.intro-main__advantages-pic {
+    width: rem(340px);
+}
+
+.intro-main__advantages-img {
+    display: block;
+    max-width: 100%;
+}
+
+/* order */
+
+.intro-main__order {
+    position: relative;
+    width: rem(611px);
+    float: right;
+}
+
+.intro-main__order-guarantee {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: rem(285px);
+    float: left;
+}
+
+
+.intro-main__order-pic {
+    width: rem(280px);
+}
+
+.intro-main__order-img {
+    display: block;
+    max-width: 100%;
+}
+
+.intro-main__order-text {
+    @include font(rem(19px), 1.3);
+    @include pt-sans-narrow();
+    text-align: center;
+}
+
+.intro-main__order-stock {
+    width: rem(310px);
+    float: right;
+}
+
+.intro-main__order-stock-wrapper {
+    width: rem(291px);
+    float: right;
+}
+
+.intro-main__order-amount {
+    @extend %clearfix;
+    margin-bottom: rem(20px);
+}
+
+.intro-main__order-values {
+    float: left;
+    font-size: 0;
+}
+
+.intro-main__order-value {
+    @include font(rem(50px), 1);
+    @include pt-sans-narrow(bold);
+    display: inline-block;
+    width: 47px;
+    padding: 2px 1px;
+    text-align: center;
+    color: $main-text-color;
+    background-color: $intro-value-color;
+    border-radius: 4px;
+
+    &:not(:first-of-type){
+        margin-left: 4px; 
+    }
+
+}
+
+.intro-main__order-value_active {
+    opacity: .7;
+}
+
+.intro-main__order-value-text {
+    position: relative;
+    display: block;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: #cecece;
+    }
+
+}
+
+.intro-main__order-footnote {
+    @include font(rem(16px), 1.1);
+    position: relative;
+    z-index: 0;
+    width: rem(113px);
+    float: left;
+    margin-left: rem(21px);
+    padding: rem(8px) 0 rem(20px) 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -11px;
+        z-index: -1;
+        display: inline-block;
+        width: 118px;
+        height: 54px;
+        background-color: $background-color;
+        border-radius: 4px;
+        opacity: .6;
+    }
+
+}
+
+/* form */
+
+.form {
+    width: rem(290px);
+    background-color: $header-text-color;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.form__markdown {
+    @extend %clearfix;
+    @include pt-sans-narrow();
+}
+
+.form__markdown-before {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: rem(20px) 0 rem(25px) 0;
+    background-color: $form-marcdown-color;
+
+    .form__markdown-price {
+       text-decoration: line-through;
+    }
+
+}
+
+.form__markdown-after {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: rem(20px) 0 rem(25px) 0;
+    background-color: $form-marcdown-color;
+
+    .form__markdown-price {
+        font-weight: 700;
+    }
+
+}
+
+.form__markdown-title {
+    @include font(rem(18px), 1);
+}
+
+.form__markdown-price {
+    @include font(rem(48px), 1);
+}
+
+.form__markdown-currency {
+    @include font(rem(24px), 1);
+}
+
+.form__form {
+    padding: rem(20px) rem(18px) rem(23px) rem(17px);
+}
+
+.form__input {
+    @include font(rem(14px), 1);
+    @include placeholder(#929292);
+    width: 100%;
+    padding: rem(19px) rem(14px);
+    border-radius: 4px;
+    border: 1px solid #e1e1e1;
+    outline: none;
+
+    &:not(:last-of-type){
+        margin-bottom: rem(15px);
+    }
+
+}
+
+.form__btn {
+    @include font(rem(22px), 1);
+    @include pt-sans-narrow(bold);
+    position: relative;
+    width: 100%;
+    padding: rem(17px) 0 rem(21px) rem(23px);
+    margin-top: rem(25px);
+    color: $header-text-color;
+    text-transform: uppercase;
+    background-color: $form-btn-color;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 80%;
+        bottom: 0;
+        left: 0;
+        background-color: $form-btn-lateral-color;
+        background-image: url('../images/icons/icons-sprites.png');
+        background-position: rem(-10px) rem(-10px);
+    }
+
+}
+
+.form__security {
+    padding: 0 0 0 rem(10px);
+    margin-top: rem(23px);
+    font-size: 0;
+}
+
+.form__security-icon {
+    @include inline-block(middle);
+    width: 13px;
+    height: 17px;
+    background: url('../images/icons/icons-sprites.png') -101px -30px;
+}
+
+.form__security-text {
+    @include inline-block(middle);
+    @include font(rem(15px), 1);
+    @include pt-sans-narrow();
+    margin-left: rem(10px);
+    color: $main-text-color;
 }

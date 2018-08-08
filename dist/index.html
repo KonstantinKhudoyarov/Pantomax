@@ -5,7 +5,7 @@
     <title>Pantomax</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Sans:400,700|Roboto+Condensed:700|Roboto:500&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow:400,700|PT+Sans:400,700|Roboto+Condensed:700|Roboto:500&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
@@ -51,17 +51,17 @@
                             </li>
                             <li class="intro-main__advantages-item">
                                 <span class="intro-main__advantages-marker"></span>
-                                <span class="intro-main__advantages-text">Гарантированный стояк до 3-х часов</span>
+                                <span class="intro-main__advantages-text">Гарантированный стояк <br> до 3-х часов</span>
                             </li>
                         </ul>
                         <div class="intro-main__advantages-pic">
-                            <img src="" alt="" class="intro-main__advantages-img">
+                            <img src="/images/product.png" alt="" class="intro-main__advantages-img">
                         </div>
                     </div>
                     <div class="intro-main__order">
                         <div class="intro-main__order-guarantee">
                             <div class="intro-main__order-pic">
-                                <img src="" alt="" class="intro-main__order-img">
+                                <img src="/images/percent.png" alt="" class="intro-main__order-img">
                             </div>
                             <p class="intro-main__order-text">
                                 Ваша потенция вернется через 21 день
@@ -69,27 +69,51 @@
                             </p>
                         </div>
                         <div class="intro-main__order-stock">
-                            <div class="intro-main__order-amount">
-                                <ul class="intro-main__order-values">
-                                    <li class="intro-main__order-value"></li>
-                                    <li class="intro-main__order-value"></li>
-                                    <li class="intro-main__order-value"></li>
-                                </ul>
-                                <p class="intro-main__order-footnote">
-                                    *Всего упаковок по акции 
-                                </p>
+                            <div class="intro-main__order-stock-wrapper">
+                                <div class="intro-main__order-amount">
+                                    <ul class="intro-main__order-values">
+                                        <li class="intro-main__order-value intro-main__order-value_active">
+                                            <span class="intro-main__order-value-text">0</span>
+                                        </li>
+                                        <li class="intro-main__order-value">
+                                            <span class="intro-main__order-value-text">1</span>
+                                        </li>
+                                        <li class="intro-main__order-value">
+                                            <span class="intro-main__order-value-text">0</span>
+                                        </li>
+                                    </ul>
+                                    <p class="intro-main__order-footnote">
+                                        *Всего упаковок по акции 
+                                    </p>
+                                </div>
+                                <div class="form">
+                                    <div class="form__markdown">
+                                        <div class="form__markdown-before form__markdown-before_full">
+                                            <div class="form__markdown-title">Полная цена</div>
+                                            <span class="form__markdown-price">1980</span>
+                                            <span class="form__markdown-currency">руб</span>
+                                        </div>
+                                        <div class="form__markdown-after form__markdown-after_half">
+                                            <div class="form__markdown-title">Цена со скидкой</div>
+                                            <span class="form__markdown-price">990</span>
+                                            <span class="form__markdown-currency">руб</span>
+                                        </div>
+                                     </div>
+                                    <div class="form__form">
+                                        <form action="#" method="GET">
+                                            <div class="form__inputs">
+                                                <input type="text" class="form__input" placeholder="Введите ваше имя">
+                                                <input type="tel" class="form__input" placeholder="Введите номер телефона">
+                                            </div>
+                                            <button type="submit" class="form__btn">Заказать сейчас</button>
+                                        </form>
+                                        <div class="form__security">
+                                            <span class="form__security-icon"></span>
+                                            <span class="form__security-text">Ваши данные под защитой SecureTECH</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <form action="#" method="GET" class="form">
-                                <div class="form__markdown">
-                                    <div class="form__markdown-before"></div>
-                                    <div class="form__markdown-after"></div>
-                                </div>
-                                <div class="form__inputs">
-                                    <input type="text" class="form__input" placeholder="Введите ваше имя">
-                                    <input type="tel" class="form__input" placeholder="Введите номер телефона">
-                                </div>
-                            </form>
-
                         </div>
                     </div>
                 </section>
