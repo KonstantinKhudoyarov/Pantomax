@@ -1,5 +1,5 @@
 .intro {
-    color: $header-text-color;
+    color: $main-color;
 
     .container {
         background: url('../images/background/intro-background.png') 0 0 no-repeat;
@@ -185,7 +185,7 @@
 
 .form {
     width: rem(290px);
-    background-color: $header-text-color;
+    background-color: $main-color;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -259,7 +259,7 @@
     width: 100%;
     padding: rem(17px) 0 rem(21px) rem(23px);
     margin-top: rem(25px);
-    color: $header-text-color;
+    color: $main-color;
     text-transform: uppercase;
     background-color: $form-btn-color;
     border-radius: 4px;

@@ -1,0 +1,27 @@
+.description {
+    padding: rem(67px) 0 0 0;
+
+    .container {
+        padding: rem(27px) 0 rem(33px) rem(39px);
+        background-color: $main-color;
+        border-radius: 9px;
+    }
+
+}
+
+.description__wrapper {
+    width: rem(555px);
+}
+
+.description__header {
+    margin-bottom: rem(22px);
+}
+
+.description__text {
+    @include font(rem(17px), 1.52);
+}
+
+.description__text-accent {
+    font-weight: 700;
+    text-transform: uppercase;
+}
