@@ -1,0 +1,13 @@
+.caption {
+    @include font(rem(48px), 1.083);
+    @include pt-sans-narrow(bold);
+    text-transform: uppercase;
+}
+
+.caption__small {
+    font-weight: 400;
+}
+
+.caption__accent {
+    color: $form-btn-color;
+}

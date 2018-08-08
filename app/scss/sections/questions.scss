@@ -10,18 +10,7 @@
 }
 
 .questions__header {
-    @include font(rem(48px), 1.083);
-    @include pt-sans-narrow(bold);
     text-align: center;
-    text-transform: uppercase;
-}
-
-.questions__header-small {
-    font-weight: 400;
-}
-
-.questions__header-accent {
-    color: $form-btn-color;
 }
 
 .questions__phrase {
