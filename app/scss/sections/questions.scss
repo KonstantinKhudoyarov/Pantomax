@@ -1,0 +1,88 @@
+.questions {
+    color: $header-text-color;
+
+    .container {
+        padding: rem(38px) 0 0 0;
+        background: url('../images/background/questions-background.png') 0 0 no-repeat;
+        background-position-y: -46px;
+    }
+
+}
+
+.questions__header {
+    @include font(rem(48px), 1.083);
+    @include pt-sans-narrow(bold);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.questions__header-small {
+    font-weight: 400;
+}
+
+.questions__header-accent {
+    color: $form-btn-color;
+}
+
+.questions__phrase {
+    @include font(rem(22px), 2.36);
+    text-align: center;
+}
+
+/* choice */
+.question__choice {
+    width: rem(641px);
+    padding: rem(31px) 0 rem(50px) 0;
+    margin: rem(14px) auto 0 auto;
+    text-align: center;
+    font-size: 0;
+    background-color: $header-text-color;
+    border-radius: 9px;
+}
+
+.question__choice-number {
+    @include inline-block(middle);
+    position: relative;
+    width: 60px;
+    height: 60px;
+    color: $main-text-color;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+
+.question__choice-numeric {
+    @include font(rem(30px), 2);
+    font-weight: 700;
+}
+
+.question__choice-header {
+    @include inline-block(middle);
+    @include font(rem(24px), 2.16);
+    margin-left: rem(15px);
+    font-weight: 700;
+    color: $main-text-color;
+    text-transform: uppercase;
+}
+
+.question__choice-btns {
+    margin-top: rem(40px);
+}
+
+.question__choice-btn {
+    @include font(rem(24px), 2.16);
+    @include pt-sans(bold);
+    padding: rem(15px) 0;
+    width: rem(250px);
+    color: $header-text-color;
+    text-transform: uppercase;
+    background-color: $choice-btn-color;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+
+    &:not(:first-of-type){
+        margin-left: rem(20px);
+    }
+
+}
