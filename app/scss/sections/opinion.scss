@@ -1,0 +1,29 @@
+.opinion__doc {
+    font-size: 0;
+}
+
+.opinion__doc-name {
+    @include font(rem(16px), 1.5);
+    @include pt-sans(bold);
+    @include inline-block(middle);
+}
+
+.opinion__doc-pic {
+    @include inline-block(middle);
+    width: rem(185px);
+    margin-left: rem(63px);
+}
+
+.opinion__doc-signature {
+    display: block;
+    max-width: 100%;
+}
+
+.opinion__decor {
+    width: rem(824px);
+    margin: 0 auto;
+}
+
+.opinion__decor-img {
+    display: block;
+}

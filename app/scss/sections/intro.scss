@@ -18,6 +18,9 @@
     margin-bottom: rem(21px);
     color: $intro-heading-color;
     text-transform: uppercase;
+    background: linear-gradient(45deg, #f0e394 33%, #d4c275 66%, #b69d54);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .intro-main__advantages {
@@ -182,25 +185,64 @@
 }
 
 /* form */
-
 .form {
+    position: relative;
     width: rem(290px);
     background-color: $main-color;
     border-radius: 8px;
-    overflow: hidden;
+    box-shadow: 0px 0px 40px 0px rgba(254, 213, 91, 0.25);
+
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: -11px;
+        left: 0;
+        display: inline-block;
+        width: 110px;
+        height: 15px;
+        background: url('../images/decor/markdown-decor.png') 0 0 no-repeat;
+    }
+
 }
 
 .form__markdown {
     @extend %clearfix;
     @include pt-sans-narrow();
+    position: relative;
+    background-color: $form-marcdown-color;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background: #9f3f1c;
+    background: -moz-linear-gradient(top, hsla(16,70%,37%,1) 0%, hsla(16,70%,37%,1) 0%, hsla(16,70%,37%,1) 2%, hsla(11,78%,15%,1) 69%);
+    background: -webkit-linear-gradient(top, hsla(16,70%,37%,1) 0%,hsla(16,70%,37%,1) 0%,hsla(16,70%,37%,1) 2%,hsla(11,78%,15%,1) 69%);
+    background: linear-gradient(to bottom, hsla(16,70%,37%,1) 0%,hsla(16,70%,37%,1) 0%,hsla(16,70%,37%,1) 2%,hsla(11,78%,15%,1) 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9f3f1c', endColorstr='#411208',GradientType=0 );
+    overflow: hidden;
 }
 
 .form__markdown-before {
+    position: relative;
     width: 50%;
     float: left;
-    text-align: center;
     padding: rem(20px) 0 rem(25px) 0;
-    background-color: $form-marcdown-color;
+    text-align: center;
+    color: #7a5b53;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255,255,255, .1);
+        border-top-right-radius: 8% 70%;
+        border-bottom-right-radius: 8% 70%;
+
+    }
 
     .form__markdown-price {
        text-decoration: line-through;
@@ -213,7 +255,7 @@
     float: left;
     text-align: center;
     padding: rem(20px) 0 rem(25px) 0;
-    background-color: $form-marcdown-color;
+    
 
     .form__markdown-price {
         font-weight: 700;
