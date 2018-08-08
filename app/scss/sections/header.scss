@@ -1,0 +1,65 @@
+.header {
+    @extend %clearfix;
+    padding: rem(23px) 0 0 0;
+}
+
+/* logo */
+.header__logo {
+    width: rem(261px);
+    float: left;
+}
+
+.logo {
+    display: block;
+}
+
+.logo__img {
+    max-width: 100%;
+    display: block;
+}
+
+/* statuses */
+.header__statuses {
+    width: rem(450px);
+    float: left;
+    margin-left: rem(84px);
+    padding: rem(6px) 0 rem(10px) 0;
+    color: $header-text-color;
+    font-size: 0;
+}
+
+.header__natural,
+.header__effectively {
+    display: inline-block;
+}
+
+.header__natural-icon-nat {
+    display: inline-block;
+    width: 29px; 
+    height: 37px;
+    margin-bottom: rem(-12px);
+    background: url('../images/icons/icons-sprites.png') -187px -30px;
+}
+
+.header__effectively {
+    margin-left: rem(29px);   
+}
+
+.header__natural-icon-eff {
+    display: inline-block;
+    width: 42px; 
+    height: 37px;
+    margin-bottom: rem(-12px);
+    background: url('../images/icons/icons-sprites.png') -276px -30px;
+}
+
+.header__natural-percent {
+    margin-left: rem(9px); 
+    @include font(rem(24px), 1);
+    @include pt-sans(bold);
+}
+
+.header__natural-text {
+    margin-left: rem(7px);
+    @include font(rem(18px), 1.29);
+}

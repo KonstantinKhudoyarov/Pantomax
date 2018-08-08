@@ -10,6 +10,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-wait": "0.0.2",
-    "spritesmith": "^3.3.1"
+    "gulp.spritesmith": "^6.9.0"
   }
 }
