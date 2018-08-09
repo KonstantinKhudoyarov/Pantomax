@@ -299,16 +299,20 @@
     @include pt-sans-narrow(bold);
     position: relative;
     width: 100%;
-    padding: rem(17px) 0 rem(21px) rem(23px);
+    padding: rem(17px) 0 rem(21px) rem(51px);
     margin-top: rem(25px);
     color: $main-color;
     text-transform: uppercase;
-    background-color: $form-btn-color;
     border-radius: 4px;
     border: none;
     outline: none;
     cursor: pointer;
     overflow: hidden;
+    background: #f9491b;
+    background: -moz-linear-gradient(top, hsla(12,95%,54%,1) 1%, hsla(13,90%,53%,1) 58%, hsla(13,81%,47%,1) 94%);
+    background: -webkit-linear-gradient(top, hsla(12,95%,54%,1) 1%,hsla(13,90%,53%,1) 58%,hsla(13,81%,47%,1) 94%);
+    background: linear-gradient(to bottom, hsla(12,95%,54%,1) 1%,hsla(13,90%,53%,1) 58%,hsla(13,81%,47%,1) 94%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9491b', endColorstr='#da4017',GradientType=0 );
 
     &::before {
         content: "";
