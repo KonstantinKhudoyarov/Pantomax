@@ -470,6 +470,7 @@
     outline: none;
     cursor: pointer;
     overflow: hidden;
+    transition: opacity .2s;
     background: #f9491b;
     background: -moz-linear-gradient(top, hsla(12,95%,54%,1) 1%, hsla(13,90%,53%,1) 58%, hsla(13,81%,47%,1) 94%);
     background: -webkit-linear-gradient(top, hsla(12,95%,54%,1) 1%,hsla(13,90%,53%,1) 58%,hsla(13,81%,47%,1) 94%);
@@ -486,6 +487,10 @@
         background-color: $form-btn-lateral-color;
         background-image: url('../images/icons/icons-sprites.png');
         background-position: rem(-10px) rem(-10px);
+    }
+
+    &:hover {
+        opacity: .8;
     }
 
     @include laptop {

@@ -125,6 +125,7 @@
     border-radius: 8px;
     outline: none;
     cursor: pointer;
+    transition: opacity .2s;
 
     &:not(:first-of-type){
         margin-left: rem(20px);
@@ -141,6 +142,10 @@
         border-bottom-left-radius: 50% 45%;
         border-bottom-right-radius: 50% 45%;
         background-color: rgba(255,255,255, .2);
+    }
+
+    &:hover {
+        opacity: .8;
     }
 
     @include tablet {
