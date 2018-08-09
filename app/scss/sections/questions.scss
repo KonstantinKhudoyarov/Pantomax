@@ -4,7 +4,7 @@
     .container {
         padding: rem(38px) 0 0 0;
         background: url('../images/background/questions-background.png') 0 0 no-repeat;
-        background-position-y: -46px;
+        background-position-y: rem(-46px);
     }
 
 }
@@ -32,8 +32,8 @@
 .question__choice-number {
     @include inline-block(middle);
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: rem(60px);
+    height: rem(60px);
     color: $main-text-color;
     background-color: #e5e5e5;
     border-radius: 50%;

@@ -49,8 +49,8 @@
 
 .intro-main__advantages-marker {
     @include inline-block(middle);
-    width: 24px;
-    height: 24px;
+    width: rem(24px);
+    height: rem(24px);
     background: url('../images/icons/icons-sprites.png') -174px -30px;
 }
 
@@ -125,7 +125,7 @@
     @include font(rem(50px), 1);
     @include pt-sans-narrow(bold);
     display: inline-block;
-    width: 47px;
+    width: rem(47px);
     padding: 2px 1px;
     text-align: center;
     color: $main-text-color;
@@ -171,12 +171,12 @@
     &::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: -11px;
+        top: rem(10px);
+        left: rem(-11px);
         z-index: -1;
         display: inline-block;
-        width: 118px;
-        height: 54px;
+        width: rem(118px);
+        height: rem(54px);
         background-color: $background-color;
         border-radius: 4px;
         opacity: .6;
@@ -196,11 +196,11 @@
         content: "";
         position: absolute;
         z-index: 1;
-        top: -11px;
+        top: rem(-11px);
         left: 0;
         display: inline-block;
-        width: 110px;
-        height: 15px;
+        width: rem(110px);
+        height: rem(15px);
         background: url('../images/decor/markdown-decor.png') 0 0 no-repeat;
     }
 
@@ -332,8 +332,8 @@
 
 .form__security-icon {
     @include inline-block(middle);
-    width: 13px;
-    height: 17px;
+    width: rem(13px);
+    height: rem(17px);
     background: url('../images/icons/icons-sprites.png') -101px -30px;
 }
 

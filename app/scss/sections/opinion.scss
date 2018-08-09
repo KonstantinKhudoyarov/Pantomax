@@ -1,10 +1,15 @@
 .opinion {
+    margin-top: rem(50px);
 
     .information {
         padding: rem(27px) 0 rem(15px) rem(39px);
         background-image: url('../images/background/opinion-background.png');
         background-position: 100% 0;
         background-repeat: no-repeat;
+    }
+
+    .information__wrapper {
+        width: rem(571px);
     }
 
     .information__text_opinion {
