@@ -6,10 +6,33 @@
         background-image: url('../images/background/opinion-background.png');
         background-position: 100% 0;
         background-repeat: no-repeat;
+
+        @include laptop {
+            padding-left: 1rem;
+            background-image: url('../images/background/opinion-background-laptop.png');
+        }
+
+        @include tablet {
+            background-image: url('../images/background/opinion-background-tablet.png');
+        }
+
     }
 
     .information__wrapper {
         width: rem(571px);
+
+        @include laptop {
+            width: 33rem;
+        }
+
+        @include phone {
+            width: 26rem;
+        }
+
+        @include small-phone {
+            width: 22rem;
+        }
+
     }
 
     .information__text_opinion {
@@ -17,11 +40,23 @@
         &:not(:last-of-type) {
             margin-bottom: rem(8px);
         }
+
+        @include laptop {
+            &:not(:last-of-type) {
+                margin-bottom: rem(4px);
+            }
+        }
     
     }
 
     .information__header {
         margin-bottom: rem(20px);
+    }
+
+    .caption {
+        @include laptop {
+            font-size: 35px;
+        }
     }
 
 }
@@ -50,6 +85,19 @@
 .opinion__decor {
     width: rem(824px);
     margin: 0 auto;
+
+    @include laptop {
+        display: none;
+    }
+
+    @include tablet {
+        display: none;
+    }
+
+    @include phone {
+        display: none;
+    }
+
 }
 
 .opinion__decor-img {

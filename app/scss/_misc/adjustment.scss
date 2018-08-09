@@ -6,6 +6,17 @@
 
 html {
     font-size: 16px;
+
+    @include laptop {
+        font-size: 15px;
+    }
+    @include tablet {
+        font-size: 14px;
+    }
+    @include phone {
+        font-size: 13px;
+    }
+
 }
 
 html,
@@ -24,6 +35,20 @@ body {
 .container {
     width: $container-width;
     margin: 0 auto;
+
+    @include desktop {
+        max-width: 970px;
+      }
+      @include laptop {
+        max-width: 750px;
+      }
+      @include tablet {
+        max-width: 480px;
+      }
+      @include phone {
+        max-width: 95%;
+      }
+
 }
 
 .wrapper {

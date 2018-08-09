@@ -2,6 +2,11 @@
     padding: rem(27px) 0 rem(33px) rem(39px);
     background-color: $main-color;
     border-radius: 9px;
+
+    @include laptop {
+        padding: 1.6875rem 0 .9375rem 1rem;
+    }
+
 }
 
 .information__wrapper {

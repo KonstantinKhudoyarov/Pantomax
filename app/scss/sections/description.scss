@@ -1,9 +1,42 @@
 .description {
+    padding: rem(67px) 0 0 0;
+
     .information {
         background-image: url('../images/background/description-background.png');
         background-position: 100% 0;
         background-repeat: no-repeat;
+
+        @include laptop {
+            background-image: url('../images/background/description-background-laptop.png');
+            background-size: contain;
+        }
+
+        @include tablet {
+            background-image: none;
+        }
+
     }
 
-    padding: rem(67px) 0 0 0;
+    .information__wrapper {
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    .information__text {
+        width: 98%;
+    }
+
+    .caption {
+
+        @include laptop {
+            font-size: rem(35px);
+        }
+
+        @include phone {
+            font-size: rem(25px);
+        }
+
+    }
+    
 }

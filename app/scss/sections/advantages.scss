@@ -1,6 +1,25 @@
 .advantages {
     padding: rem(55px) 0 0 0;
-    background: url('../images/background/advantages-background.png') rem(250px) rem(170px) no-repeat;
+    
+
+    .container {
+        background: url('../images/background/advantages-background.png') rem(-30px) rem(150px) no-repeat;
+
+        @include laptop {
+            background: url('../images/background/advantages-background-laptop.png') rem(-30px) rem(300px) no-repeat;
+        }
+
+        @include tablet {
+            background: none;
+        }
+
+    }
+
+    .caption {
+        @include phone {
+            font-size: 2rem;
+        }
+    }
 }
 
 .advantages__wrapper {
@@ -16,6 +35,19 @@
     float: right;
     margin-right: rem(-20px);
     font-size: 0;
+
+    @include tablet {
+        width: 31rem;
+    }
+
+    @include phone {
+        width: 29rem;
+    }
+
+    @include small-phone {
+        width: 19rem;
+    }
+
 }
 
 .advantages__item {

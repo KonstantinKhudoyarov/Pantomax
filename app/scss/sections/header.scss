@@ -7,6 +7,12 @@
 .header__logo {
     width: rem(261px);
     float: left;
+
+    @include phone {
+        float: none;
+        margin: 0 auto;
+    }
+
 }
 
 .logo {
@@ -26,12 +32,38 @@
     padding: rem(6px) 0 rem(10px) 0;
     color: $main-color;
     font-size: 0;
+
+    @include tablet {
+        width: 14rem;
+        float: right;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    @include phone {
+        width: 100%;
+        text-align: center;
+    }
+
 }
 
 .header__natural,
 .header__effectively {
     display: inline-block;
+
+    @include tablet {
+        margin: 0;
+        padding: rem(7px) 0;
+        display: block;
+    }
+
+    @include phone {
+        display: inline-block;
+    }
+
 }
+
+
 
 .header__natural-icon-nat {
     display: inline-block;
@@ -42,7 +74,16 @@
 }
 
 .header__effectively {
-    margin-left: rem(29px);   
+    margin-left: rem(29px);
+    
+    @include tablet {
+        margin-left: 0;
+    }
+
+    @include phone {
+        margin-left: rem(15px);
+    }
+
 }
 
 .header__natural-icon-eff {
@@ -50,7 +91,7 @@
     width: 42px; 
     height: 37px;
     margin-bottom: rem(-12px);
-    background: url('../images/icons/icons-sprites.png') rem(-347px) rem(-30px);
+    background: url('../images/icons/icons-sprites.png') -347px -30px;
 }
 
 .header__natural-percent {
