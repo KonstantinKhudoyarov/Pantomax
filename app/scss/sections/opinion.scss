@@ -1,3 +1,26 @@
+.opinion {
+
+    .information {
+        padding: rem(27px) 0 rem(15px) rem(39px);
+        background-image: url('../images/background/opinion-background.png');
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+    }
+
+    .information__text_opinion {
+
+        &:not(:last-of-type) {
+            margin-bottom: rem(8px);
+        }
+    
+    }
+
+    .information__header {
+        margin-bottom: rem(20px);
+    }
+
+}
+
 .opinion__doc {
     font-size: 0;
 }
