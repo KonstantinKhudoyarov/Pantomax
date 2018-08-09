@@ -1,11 +1,10 @@
 .advantages {
     padding: rem(55px) 0 0 0;
-    background: url('../images/background/advantages-background.png') 0 150px no-repeat;
+    background: url('../images/background/advantages-background.png') rem(250px) rem(170px) no-repeat;
+}
 
-    .container {
-        @extend %clearfix;
-    }
-
+.advantages__wrapper {
+    @extend %clearfix;
 }
 
 .advantages__header {
