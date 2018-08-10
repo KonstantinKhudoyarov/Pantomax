@@ -1,6 +1,10 @@
 .opinion {
     margin-top: rem(50px);
 
+    @include laptop {
+        padding-bottom: 1rem;
+    }
+
     .information {
         padding: rem(27px) 0 rem(15px) rem(39px);
         background-image: url('../images/background/opinion-background.png');
@@ -51,6 +55,11 @@
 
     .information__header {
         margin-bottom: rem(20px);
+
+        @include laptop {
+            margin-bottom: rem(12px);
+        }
+
     }
 
     .caption {

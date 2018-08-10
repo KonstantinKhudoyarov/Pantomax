@@ -36,16 +36,21 @@
     margin-right: rem(-20px);
     font-size: 0;
 
+    @include laptop {
+        float: none;
+        margin: 0 auto;
+    }
+
     @include tablet {
-        width: 31rem;
+        width: 28rem;
     }
 
     @include phone {
-        width: 29rem;
+        width: 28rem;
     }
 
     @include small-phone {
-        width: 19rem;
+        width: 25rem;
     }
 
 }
@@ -56,6 +61,11 @@
     margin: 0 rem(20px) rem(15px) 0;
     border-radius: 9px;
     overflow: hidden;
+
+    @include small-phone {
+        width: 11rem;
+    }
+
 }
 
 .advantages__item-pic {
@@ -73,6 +83,14 @@
     padding: rem(20px) 0 rem(22px) 0;
     text-align: center;
     background-color: $main-color;
+}
+
+.advantages__item-desc_phone {
+
+    @include small-phone {
+        padding: .8rem 0 .8rem;
+    }
+
 }
 
 .advantages__item-desc_less-padding {

@@ -502,6 +502,31 @@
 
     }
 
+    @include  tablet {
+        font-size: rem(19px);
+
+        &::before {
+            background-position: rem(-15px) rem(-19px);
+        }
+
+    }
+
+    @include  phone {
+
+        &::before {
+            background-position: rem(-18px) rem(-22px);
+        }
+
+    }
+
+    @include  phone {
+
+        &::before {
+            background-position: rem(-19px) rem(-24px);
+        }
+
+    }
+
 }
 
 .form__security {
